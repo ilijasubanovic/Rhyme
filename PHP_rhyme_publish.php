@@ -1,18 +1,13 @@
 <?php
 	$q=$_GET["q"];
 	$r=$_GET["r"];
-//	echo "$r";
-	//$mysql_host = "mysql15.000webhost.com";
-	//$mysql_database = "a4418029_words";
-	//$mysql_user = "a4418029_dbuser";
-	//$mysql_password = "Balt4zar";
 	
-	$con = mysql_connect('mysql15.000webhost.com', 'a4418029_dbuser', 'Balt4zar');
+	$con = mysql_connect('', '', '');
 	if (!$con)
 	{
 		die('Could not connect: ' . mysql_error());
 	}
-	mysql_select_db("a4418029_words", $con);
+	mysql_select_db("", $con);
 	mysql_query("SET names 'utf8'");
 	mysql_query("SET CHARACTER SET utf8");
 	mysql_query("SET COLLATION_CONNECTION='utf8_unicode_ci'");
